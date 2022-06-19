@@ -31,7 +31,7 @@ public class Main {
                     exchange.sendResponseHeaders(200, 0);
                     out = exchange.getResponseBody();
                     int i = 0;
-                    ArrayList<byte[]> images = img.getImage();
+                    ArrayList<byte[]> images = img.getImage("bimo");
                     while(true) {
                         if(i < images.size()) {
                             out.write((
