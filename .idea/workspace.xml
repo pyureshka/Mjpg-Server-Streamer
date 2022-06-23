@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0840c51d-59a1-4630-80b7-6c88db011a93" name="Changes" comment="creating simple mjpg streaming">
+    <list default="true" id="0840c51d-59a1-4630-80b7-6c88db011a93" name="Changes" comment="added a method for converting gif to jpg">
+      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org.example/TcpConnecting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org.example/WebSocketWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org.example/ImageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org.example/ImageSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org.example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org.example/Main.java" afterDir="false" />
@@ -33,18 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Полина/IdeaProjects/Server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15136719&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31797236&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Полина/IdeaProjects/ServerStreaming",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15136719",
+    "project.structure.side.proportion": "0.31797236"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.java.org.example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Полина\IdeaProjects\ServerStreaming\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Полина\IdeaProjects\ServerStreaming" />
     </key>
@@ -85,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655455061549</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a method for converting gif to jpg">
+      <created>1655599459643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655599459643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating simple mjpg streaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating simple mjpg streaming" />
+    <MESSAGE value="added a method for converting gif to jpg" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a method for converting gif to jpg" />
   </component>
 </project>

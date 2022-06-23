@@ -22,8 +22,9 @@ public class ImageSource {
     public ImageSource() {}
 
     public ArrayList<byte[]> getImage(String gifName) throws IOException, InterruptedException {
-        gifToJpg(gifName);
         fileImage = new File("./"+gifName);
+        if (fileImage.listFiles().length == 1)
+            gifToJpg(gifName);
         ArrayList<byte[]> listByteImg = new ArrayList<>();
 
         for (File img : fileImage.listFiles()){
@@ -84,6 +85,5 @@ public class ImageSource {
         } catch (IOException e) {
             e.printStackTrace();
         }
-       // return master;
     }
 }
