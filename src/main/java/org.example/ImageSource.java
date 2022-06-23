@@ -15,32 +15,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ImageSource {
-    private File fileImage;
     private ByteArrayOutputStream streamByteArray;
-    private BufferedImage bufferedImage;
 
     public ImageSource() {}
 
-    public ArrayList<byte[]> getImage(String gifName) throws IOException, InterruptedException {
-        fileImage = new File("./"+gifName);
-        if (fileImage.listFiles().length == 1)
-            gifToJpg(gifName);
-        ArrayList<byte[]> listByteImg = new ArrayList<>();
-
-        for (File img : fileImage.listFiles()){
-            bufferedImage = ImageIO.read(img);
-            streamByteArray = new ByteArrayOutputStream();
-            ImageIO.write(bufferedImage, "jpg", streamByteArray);
-            streamByteArray.flush();
-            listByteImg.add(streamByteArray.toByteArray());
-        }
-
-        streamByteArray.close();
-        return listByteImg;
-    }
-
-    public void gifToJpg(String gifName) {
-        BufferedImage master = null;
+    public ArrayList<byte[]> getImage(String gifName) throws IOException {
+        ArrayList<byte[]> gifFrames = new ArrayList<>();
+        BufferedImage master;
         try {
             String[] imageatt = new String[]{
                     "imageLeftPosition",
@@ -49,8 +30,8 @@ public class ImageSource {
                     "imageHeight"
             };
 
-            ImageReader reader = (ImageReader) ImageIO.getImageReadersByFormatName("gif").next();
-            ImageInputStream ciis = ImageIO.createImageInputStream(new File("./"+gifName+"/"+gifName+".gif"));
+            ImageReader reader = ImageIO.getImageReadersByFormatName("gif").next();
+            ImageInputStream ciis = ImageIO.createImageInputStream(new File("./resources"+"/"+gifName+".gif"));
             reader.setInput(ciis, false);
 
             int noi = reader.getNumImages(true);
@@ -80,10 +61,15 @@ public class ImageSource {
                         master.getGraphics().drawImage(image, imageAttr.get("imageLeftPosition"), imageAttr.get("imageTopPosition"), null);
                     }
                 }
-                ImageIO.write(master, "GIF", new File("./"+gifName+"/"+gifName + i + ".gif"));
+                streamByteArray = new ByteArrayOutputStream();
+                ImageIO.write(master, "GIF", streamByteArray);
+                gifFrames.add(streamByteArray.toByteArray());
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        streamByteArray.close();
+        return gifFrames;
     }
 }

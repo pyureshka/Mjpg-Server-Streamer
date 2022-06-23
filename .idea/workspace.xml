@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0840c51d-59a1-4630-80b7-6c88db011a93" name="Changes" comment="added a method for converting gif to jpg">
-      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org.example/TcpConnecting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org.example/WebSocketWorker.java" afterDir="false" />
+    <list default="true" id="0840c51d-59a1-4630-80b7-6c88db011a93" name="Changes" comment="changed the Http connections and added multithreading">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org.example/ImageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org.example/ImageSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org.example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org.example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org.example/WebSocketWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org.example/WebSocketWorker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Полина/IdeaProjects/ServerStreaming",
+    "last_opened_file_path": "C:/Users/Полина/IdeaProjects/ServerStreaming/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15136719",
     "project.structure.side.proportion": "0.31797236"
@@ -52,6 +50,7 @@
       <recent name="main.java.org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Полина\IdeaProjects\ServerStreaming\resources" />
       <recent name="C:\Users\Полина\IdeaProjects\ServerStreaming\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655599459643</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed the Http connections and added multithreading">
+      <created>1655959857569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655959857569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating simple mjpg streaming" />
     <MESSAGE value="added a method for converting gif to jpg" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a method for converting gif to jpg" />
+    <MESSAGE value="changed the Http connections and added multithreading" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the Http connections and added multithreading" />
   </component>
 </project>

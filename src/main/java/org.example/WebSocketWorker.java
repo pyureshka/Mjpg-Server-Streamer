@@ -16,7 +16,8 @@ public class WebSocketWorker extends Thread{
     public void run() {
         try {
             String header = readRequest();
-            sendHttpResponse(header);
+            if(header != null)
+                sendHttpResponse(header);
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -32,7 +33,7 @@ public class WebSocketWorker extends Thread{
     public void sendHttpResponse (String header) throws IOException, InterruptedException {
         String path = header.split(" ")[1];
         out = socket.getOutputStream();
-        if (new File("." + path).exists()) {
+        if (new File("./resources/" + path + ".gif").exists()) {
             img = new ImageSource();
 
             // http response
